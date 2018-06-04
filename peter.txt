@@ -3,12 +3,12 @@ MAIN:       MOV 5 A
             JMP FACT
             MOV 1 A 
             HALT
-FACT:       PUSH A
+FACTORIAL:  PUSH A
             ALWAYS
             CALL TAILRECUR
             POP A
             HALT
-TAILRECUR:  PUSH A
+TAIL:       PUSH A
             MOV +2 A
             DEC
             NZERO
