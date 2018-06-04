@@ -1,0 +1,12 @@
+MAIN:	MOV 3 A
+	MOV 2 B
+	ADD
+	PUSH A
+	MOV 2 A
+	MOV +0 B
+	ADD
+	PUSH A
+	PUSH B
+	POP A
+	POP B
+	RTN +1
